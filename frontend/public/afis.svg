@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 960" role="img" aria-labelledby="title desc">
+  <title id="title">Kariyer Günleri 2026 afişi</title>
+  <desc id="desc">Koyu lacivert zemin üzerinde Kariyer Günleri 2026 yazan kampüs etkinliği afişi.</desc>
+  <rect width="720" height="960" fill="#10233c"/>
+  <rect x="26" y="26" width="668" height="908" rx="14" fill="none" stroke="#d39b7f" stroke-width="5"/>
+  <rect x="39" y="39" width="642" height="882" rx="10" fill="none" stroke="#2f4a68" stroke-width="9"/>
+  <circle cx="360" cy="260" r="72" fill="#159447" opacity="0.95"/>
+  <path d="M330 262l24 24 43-53" fill="none" stroke="#ffffff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="360" y="430" fill="#ffffff" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700">Kariyer Günleri</text>
+  <text x="360" y="505" fill="#d39b7f" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700">2026</text>
+  <line x1="170" y1="575" x2="550" y2="575" stroke="#159447" stroke-width="5"/>
+  <text x="360" y="650" fill="#ffffff" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28">12 Ekim 2026 · 14:00</text>
+  <text x="360" y="704" fill="#cbd7e4" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25">A Blok Konferans Salonu</text>
+  <text x="360" y="840" fill="#8fa5bc" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20">KAMPÜS ETKİNLİKLERİ</text>
+</svg>

@@ -1,0 +1,338 @@
+:root {
+  --ana-renk: #159447;
+  --ana-koyu: #0d6f34;
+  --zemin: #f4f8f5;
+  --kart: #ffffff;
+  --metin: #1d2b22;
+  --soluk: #5e6f64;
+  --kenar: #d7e3da;
+  --hata: #b42318;
+  --hata-zemin: #fff1f0;
+  --basari: #16794b;
+  --basari-zemin: #effaf3;
+  --golge: 0 8px 20px rgba(20, 70, 40, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--metin);
+  background: var(--zemin);
+  line-height: 1.55;
+}
+
+.site-header {
+  background: var(--ana-renk);
+  color: #fff;
+  padding: 1.4rem 1rem 1rem;
+}
+
+.header-icerik,
+main,
+.footer-icerik {
+  width: min(1100px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.site-header h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.45rem 0.75rem;
+  border-radius: 0.4rem;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  background: #fff;
+  color: var(--ana-koyu);
+}
+
+main {
+  min-height: 62vh;
+  padding: 2rem 0 3rem;
+}
+
+.intro {
+  margin-bottom: 1.5rem;
+}
+
+.intro h2,
+.sayfa-baslik {
+  margin-top: 0;
+}
+
+.etkinlik-listesi {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.kart,
+.kunye-karti,
+.form-karti,
+.detay-karti,
+.filtre {
+  background: var(--kart);
+  border: 1px solid var(--kenar);
+  border-radius: 0.8rem;
+  box-shadow: var(--golge);
+}
+
+.kart {
+  padding: 1.1rem;
+  border-top: 4px solid var(--ana-renk);
+}
+
+.kart h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1.2rem;
+}
+
+.kategori-etiketi {
+  display: inline-block;
+  margin: 0 0 0.8rem;
+  color: var(--ana-koyu);
+  font-weight: 700;
+}
+
+.kart-kunye,
+.kunye-karti dl {
+  margin: 0;
+}
+
+.kart-kunye div,
+.kunye-karti dl div {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 0.5rem;
+  padding: 0.25rem 0;
+}
+
+.kart-kunye dt,
+.kunye-karti dt {
+  font-weight: 700;
+}
+
+.kart-kunye dd,
+.kunye-karti dd {
+  margin: 0;
+}
+
+.buton {
+  display: inline-block;
+  border: 0;
+  border-radius: 0.45rem;
+  padding: 0.65rem 0.9rem;
+  background: var(--ana-renk);
+  color: #fff;
+  text-decoration: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+.buton:hover {
+  background: var(--ana-koyu);
+}
+
+.buton.ikincil {
+  background: #fff;
+  color: var(--ana-koyu);
+  border: 1px solid var(--ana-renk);
+}
+
+.filtre {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 0.8rem 1rem;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.filtre .alan-grubu {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.filtre label,
+.form-karti label {
+  font-weight: 700;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid #aebdb3;
+  border-radius: 0.4rem;
+  padding: 0.7rem;
+  font: inherit;
+  background: #fff;
+  color: var(--metin);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid rgba(21, 148, 71, 0.18);
+  border-color: var(--ana-renk);
+}
+
+#sonuc {
+  margin: 0.6rem 0 1.2rem;
+  color: var(--ana-koyu);
+  font-weight: 700;
+}
+
+.bos-sonuc {
+  grid-column: 1 / -1;
+  background: #fff;
+  border: 1px dashed var(--kenar);
+  padding: 1rem;
+  border-radius: 0.6rem;
+}
+
+.detay-karti {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: minmax(230px, 0.8fr) minmax(300px, 1.2fr);
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.detay-karti.detay-afissiz {
+  grid-template-columns: 1fr;
+}
+
+.afis-figure {
+  margin: 0;
+}
+
+.afis-gorsel {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border: 4px solid #2f4a68;
+  outline: 2px solid #d39b7f;
+  background: #10233c;
+}
+
+.afis-figure figcaption {
+  margin-top: 0.55rem;
+  color: var(--soluk);
+  font-size: 0.9rem;
+}
+
+.detay-icerik h1 {
+  margin-top: 0;
+}
+
+.kunye-karti {
+  padding: 1rem;
+}
+
+.kunye-karti h2,
+.aciklama h2 {
+  margin-top: 0;
+}
+
+.aciklama {
+  margin-top: 1.2rem;
+}
+
+.detay-butonlari {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.form-aciklama {
+  max-width: 760px;
+}
+
+.form-karti {
+  padding: 1.2rem;
+  max-width: 760px;
+}
+
+.form-alan {
+  display: grid;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.mesaj {
+  max-width: 760px;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0.6rem;
+}
+
+.hata-kutusu {
+  background: var(--hata-zemin);
+  color: #7a1c14;
+  border: 1px solid #e08f87;
+}
+
+.site-footer {
+  border-top: 1px solid var(--kenar);
+  padding: 1.5rem 0;
+  color: var(--soluk);
+  text-align: center;
+}
+
+@media (max-width: 850px) {
+  .etkinlik-listesi {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .detay-karti {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .header-icerik,
+  main,
+  .footer-icerik {
+    width: min(100% - 1rem, 1100px);
+  }
+
+  .etkinlik-listesi,
+  .filtre {
+    grid-template-columns: 1fr;
+  }
+
+  .site-nav {
+    gap: 0.3rem;
+  }
+
+  .site-nav a {
+    padding: 0.4rem 0.55rem;
+    font-size: 0.95rem;
+  }
+
+  .detay-karti {
+    padding: 0.7rem;
+  }
+
+  .afis-gorsel {
+    max-height: 360px;
+  }
+}
